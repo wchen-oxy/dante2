@@ -842,6 +842,8 @@ export default class DanteEditor extends React.Component {
       return
 
     // set url first in order to calculate popover width
+    console.log(el ? 1 : 2);
+    console.log(el ? el.href : this.refs.anchor_popover.state.url);
     let coords
     this.refs.anchor_popover.setState({ url: el ? el.href : this.refs.anchor_popover.state.url })
 
